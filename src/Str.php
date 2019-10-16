@@ -6,9 +6,7 @@ class Str
 {
 	public static function studly($value)
 	{
-		if ($value == 'full_name') {
-			return 'FullName';
-		}
-		return ucfirst($value);
+		$result = ucwords(str_replace('_',' ', $value));
+		return str_replace(' ','',$result);
 	}
 }
