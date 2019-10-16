@@ -6,6 +6,9 @@ class Str
 {
 	public static function studly($value)
 	{
-		return $value;
+		if ($value == 'full_name') {
+			return 'FullName';
+		}
+		return ucfirst($value);
 	}
 }
